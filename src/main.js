@@ -66,7 +66,7 @@ function info(data) {
   let result = ``;
   data.forEach((item) => {
     const { word, phonetics, license, meanings, sourceUrls, example } = item;
-    console.log(item.meanings[1]);
+    console.log(item.meanings[1].definitions[0].example ?? "");
     result = `
  <div class="listening">
  <div class="listening-text">
@@ -118,7 +118,9 @@ function info(data) {
        meanings[1] == undefined ? "" : meanings[1].definitions[0].definition
      }</li>
    </ul>
-   <p>${meanings[1] == undefined ? "" : meanings[1].definitions[0].example}</p>
+   <p>${
+     meanings[1] == undefined ? "" : meanings[1].definitions[0].example ?? ""
+   }</p>
  </div>
 </div>
 <hr />
