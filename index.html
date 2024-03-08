@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <img src="./src/img/book.svg" alt="book" />
+        <div class="wrapper">
+          <div class="wrapper-text">
+            <div>
+              <h1 class="text">Sans Serif</h1>
+              <img src="./src/img/header-icons.svg" alt="" />
+            </div>
+            <div class="wrap-active hade">
+              <p class="font inter">Sans Serif</p>
+              <p class="font lora">Serif</p>
+              <p class="font mono">Mono</p>
+            </div>
+          </div>
+          <div class="active">
+            <div class="dark-mode">
+              <div class="circle"></div>
+            </div>
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="moon"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1 10.449C0.998458 12.8283 1.80169 15.1383 3.27914 17.0033C4.75659 18.8683 6.82139 20.1788 9.13799 20.7218C11.4545 21.2647 13.8866 21.0082 16.039 19.994C18.1912 18.9797 19.9373 17.2673 20.9931 15.1352C11.5442 15.1352 6.85799 10.4479 6.85799 1C5.09842 1.87311 3.61767 3.22033 2.58266 4.88981C1.54765 6.5593 0.999502 8.48469 1 10.449Z"
+                stroke="#757575"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container about-container">
+        <wrap>
+          <div class="input">
+            <input type="text" placeholder="search..." id="search" />
+            <img src="./src/img/search.svg" alt="" class="btn" />
+          </div>
+          <p style="color: red" class="errorText"></p>
+        </wrap>
+        <div class="information"></div>
+        <div class="errorInfo"></div>
+      </div>
+    </section>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
